@@ -43,7 +43,7 @@ namespace Tye.DockerCompose
             }
             catch (YamlException ex)
             {
-                throw new TyeYamlException(ex.Start, "Unable to parse tye.yaml. See inner exception.", ex);
+                throw new TyeYamlException(ex.Start, "Unable to parse docker-compose.yaml. See inner exception.", ex);
             }
 
             var app = new ConfigApplication();
